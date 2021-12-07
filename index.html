@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/global.css">
+	<link rel="stylesheet" href="./css/vendor.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<base target="_blank">
+</head>
+
+<body>
+	<div class="site-container">
+		<!-- HEADER -->
+<header class="header">
+	<div class="header__container container">
+		<nav class="nav header__nav">
+			<ul class="nav__list list-reset">
+				<li class="nav__item"><button data-nav="home" class="nav__link btn btn--link">Home</button></li>
+				<li class="nav__item"><button data-nav="about" class="nav__link btn btn--link">About</button></li>
+				<li class="nav__item"><button data-nav="projects" class="nav__link btn btn--link">Projects</button></li>
+				<li class="nav__item"><button data-nav="contacts" class="nav__link btn btn--link">Contacts</button></li>
+			</ul>
+		</nav>
+		<div class="header__btns">
+			<div class="header__lang-wrapper">
+				<button class="header__btn header__lang btn btn--header">
+					<svg class="btn--header-lang-icon" width="22" height="22" viewBox="0 0 22 22" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M21 10.9958C21.0053 13.5794 20.009 16.0645 18.2201 17.9298C16.4312 19.7951 13.9887 20.8955 11.4054 21C11.2698 21 11.1342 21 10.9882 21C10.7796 21 10.571 21 10.3625 20.9792C7.80368 20.813 5.40624 19.6721 3.66442 17.7918C1.92261 15.9114 0.969198 13.4349 1.00076 10.8729C1.03232 8.31088 2.04645 5.85861 3.83406 4.02167C5.62167 2.18474 8.04648 1.10319 10.6086 1C10.7337 1 10.861 1 10.9882 1H11.153C13.7796 1.0432 16.284 2.11625 18.1261 3.98774C19.9682 5.85922 21.0003 8.37918 21 11.0042V10.9958Z"
+							stroke="white" stroke-miterlimit="10" />
+						<path
+							d="M21 10.9958C21.0054 13.5794 20.009 16.0645 18.2201 17.9298C16.4312 19.7951 13.9888 20.8955 11.4054 21C11.2698 21 11.1342 21 10.9882 21C10.7797 21 10.5711 21 10.3625 20.9792C8.9622 19.7102 7.84759 18.1585 7.09244 16.4269C6.33729 14.6952 5.95882 12.823 5.98209 10.9342C6.00536 9.04539 6.42983 7.18307 7.22741 5.47049C8.02499 3.75791 9.17749 2.23413 10.6086 1C10.7338 1 10.861 1 10.9882 1H11.153C13.7796 1.0432 16.284 2.11625 18.1261 3.98774C19.9682 5.85922 21.0004 8.37918 21 11.0042V10.9958Z"
+							stroke="white" stroke-miterlimit="10" />
+						<path
+							d="M15.7855 11.1C15.7896 12.9634 15.4018 14.8069 14.6473 16.5109C13.8927 18.215 12.7882 19.7415 11.4053 20.9917C11.2697 20.9917 11.1342 20.9917 10.9882 20.9917C10.7796 20.9917 10.571 20.9917 10.3624 20.9708C7.81772 20.7866 5.4394 19.6386 3.71323 17.7612C1.98707 15.8839 1.04332 13.4188 1.07473 10.8696C1.10615 8.32037 2.11037 5.8793 3.88228 4.04498C5.65418 2.21067 8.06008 1.12152 10.6085 1C10.7337 1 10.8609 1 10.9882 1H11.1529C12.6077 2.25067 13.7748 3.80068 14.5743 5.54392C15.3739 7.28715 15.787 9.18244 15.7855 11.1Z"
+							stroke="white" stroke-miterlimit="10" />
+						<path d="M1.62097 7.46103H20.3555" stroke="white" stroke-miterlimit="10" />
+						<path d="M1.69391 14.6661H20.4285" stroke="white" stroke-miterlimit="10" />
+					</svg>
+
+				</button>
+				<ul class="header__lang-list list-reset">
+					<li class="header__lang-item">
+						<button data-lang='ru' class="header__lang-btn btn btn--lang">
+							Рус
+						</button>
+					</li>
+					<li class="header__lang-item">
+						<button data-lang='uk' class="header__lang-btn btn btn--lang">
+							Укр
+						</button>
+					</li>
+					<li class="header__lang-item">
+						<button data-lang='en' class="header__lang-btn btn btn--lang">
+							Eng
+						</button>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</header>
+		<div class="site-inner">
+			<!-- HERO -->
+<section id="hero" class="hero section">
+	<div class="hero__container container">
+		<h1 class="hero__title title title--hero">Web Developer
+			<span class="hero__title-big title--hero-big lh">Ihor Derevianko</span>
+		</h1>
+		<button class="hero__btn btn btn--main">Get start</button>
+	</div>
+</section>
+			<!-- ABOUT -->
+<section id="about" class="about section">
+	<div class="about__container container container--active container--light">
+		<ul class="about__list skills list-reset">
+			<li class="skills__item">html</li>
+			<li class="skills__item">css</li>
+			<li class="skills__item">js</li>
+			<li class="skills__item">scss</li>
+			<li class="skills__item">sass</li>
+		</ul>
+		<div class="about__inner">
+			<h2 class="about__title title title--main">
+				About
+			</h2>
+			<p class="about__desc text">Hi, my name is Igor, I am a web developer.<br>
+				I devote almost all my free time to writing code or studying it.<br>
+				I am studying on my own, but I am also in the 3rd year at the National Aviation University with a Cybersecurity
+				major.
+			</p>
+			<button class="about__btn btn btn--main">Download cv</button>
+		</div>
+		<ul class="about__list skills list-reset">
+			<li class="skills__item">bem</li>
+			<li class="skills__item">grid</li>
+			<li class="skills__item">flex</li>
+			<li class="skills__item">git</li>
+			<li class="skills__item">canvas</li>
+		</ul>
+	</div>
+	<h3 class="about__big-title title title--bg">
+		About
+	</h3>
+</section>
+			<!-- PROJECTS -->
+<section class="projects section">
+	<div class="projects__container container container--active container--light">
+		<h2 class="projects__title title title--main">
+			Projects
+		</h2>
+		<ul class="projects__list list-reset">
+			<li class="projects__item">
+				<div class="projects__menu project">
+					<h4 class="project__title title title--project">Tic Tac Toe</h4>
+					<p class="project__desc text text--project">
+						The good old, well-known game, tic-tac-toe. <br> Has a small functionality, namely, changing the player's
+						name, choosing
+						or crosses, clearing the playing field and displaying the winner or a draw.
+					</p>
+					<div class="project__btns">
+						<a href='https://iamigrek.github.io/game-tic-tac-toe/' class="project__btn project__btn-site btn btn--dark">
+							visit site
+						</a>
+						<a href='https://github.com/iamigrek/game-tic-tac-toe' class="project__btn project__btn-code btn btn--dark">
+							view code
+						</a>
+					</div>
+				</div>
+				<a class="projects__link" href="https://iamigrek.github.io/game-tic-tac-toe/">
+					<svg class="projects__link-icon" fill="none">
+						<path d="M19.0211 0L26.3097 9.96819L38.0423 13.8197L30.8142 23.8318L30.7768 36.1803L19.0211 32.4L7.26542
+						36.1803L7.22803 23.8318L0 13.8197L11.7326 9.96819L19.0211 0Z" />
+					</svg>
+				</a>
+			</li>
+			<li class="projects__item">
+				<div class="projects__menu project">
+					<h4 class="project__title title title--project">Fruit shop</h4>
+					<p class="project__desc text text--project">
+						Online store with a working basket and a calculator in it. <br> The product added to the basket is stored on
+						the local
+						storage. <br> The project was developed only to display the functionality of the basket.
+					</p>
+					<div class="project__btns">
+						<a href='https://iamigrek.github.io/fruity-shop/' class="project__btn project__btn-site btn btn--dark">
+							visit site
+						</a>
+						<a href='https://github.com/iamigrek/fruity-shop' class="project__btn project__btn-code btn btn--dark">
+							view code
+						</a>
+					</div>
+				</div>
+				<a class="projects__link" href="https://iamigrek.github.io/fruity-shop/">
+					<svg class="projects__link-icon" fill="none">
+						<path d="M19.0211 0L26.3097 9.96819L38.0423 13.8197L30.8142 23.8318L30.7768 36.1803L19.0211 32.4L7.26542
+									36.1803L7.22803 23.8318L0 13.8197L11.7326 9.96819L19.0211 0Z" />
+					</svg>
+				</a>
+			</li>
+			<li class="projects__item">
+				<div class="projects__menu project project--visible">
+					<h4 class="project__title title title--project">Operator portfolio</h4>
+					<p class="project__desc text text--project">
+						The site consists of 4 sections: Home - on which there is a modal window for feedback, with a check for
+						validity; About
+						me - a section with brief information about a person and his photo; Portfolio is the most interesting
+						section, you can
+						add content to the gallery, it also has a custom player; Contacts - a section with a feedback form and links
+						to the site
+						owner. Also, the site has a function for changing the language.
+					</p>
+					<div class="project__btns">
+						<a href='https://iamigrek.github.io/cameraman-host/' class="project__btn project__btn-site btn btn--dark">
+							visit site
+						</a>
+						<a href='https://github.com/iamigrek/cameraman-host' class="project__btn project__btn-code btn btn--dark">
+							view code
+						</a>
+					</div>
+				</div>
+				<a class="projects__link" href="https://iamigrek.github.io/cameraman-host/">
+					<svg class="projects__link-icon" fill="none">
+						<path d="M19.0211 0L26.3097 9.96819L38.0423 13.8197L30.8142 23.8318L30.7768 36.1803L19.0211 32.4L7.26542
+									36.1803L7.22803 23.8318L0 13.8197L11.7326 9.96819L19.0211 0Z" />
+					</svg>
+				</a>
+			</li>
+			<li class="projects__item">
+				<div class="projects__menu project">
+					<h4 class="project__title title title--project">JS calculator</h4>
+					<p class="project__desc text text--project">
+						Has beautiful animation and full functionality of the calculator, including complete removal.
+					</p>
+					<div class="project__btns">
+						<a href='https://iamigrek.github.io/calc/' class="project__btn project__btn-site btn btn--dark">
+							visit site
+						</a>
+						<a href='https://github.com/iamigrek/calc' class="project__btn project__btn-code btn btn--dark">
+							view code
+						</a>
+					</div>
+				</div>
+				<a class="projects__link" href="https://iamigrek.github.io/calc/">
+					<svg class="projects__link-icon" fill="none">
+						<path d="M19.0211 0L26.3097 9.96819L38.0423 13.8197L30.8142 23.8318L30.7768 36.1803L19.0211 32.4L7.26542
+											36.1803L7.22803 23.8318L0 13.8197L11.7326 9.96819L19.0211 0Z" />
+					</svg>
+				</a>
+			</li>
+			<li class="projects__item">
+				<div class="projects__menu project">
+					<h4 class="project__title title title--project">Marketing agency website</h4>
+					<p class="project__desc text text--project">
+						The site has a navigation menu that appears when scrolling, two homemade sliders (in reviews and in the
+						blog).
+					</p>
+					<div class="project__btns">
+						<a href='https://iamigrek.github.io/marketing-agency/' class="project__btn project__btn-site btn btn--dark">
+							visit site
+						</a>
+						<a href='https://github.com/iamigrek/marketing-agency' class="project__btn project__btn-code btn btn--dark">
+							view code
+						</a>
+					</div>
+				</div>
+				<a class="projects__link" href="#">
+					<svg class="projects__link-icon" fill="none">
+						<path d="M19.0211 0L26.3097 9.96819L38.0423 13.8197L30.8142 23.8318L30.7768 36.1803L19.0211 32.4L7.26542
+											36.1803L7.22803 23.8318L0 13.8197L11.7326 9.96819L19.0211 0Z" />
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<h3 class="projects__bit-title title title--bg">
+		Projects
+	</h3>
+</section>
+			<!-- CONTACTS -->
+<section class="contacts section">
+	<div class="contacts__container container container--light">
+		<h2 class="contacts__title title title--main">
+			Contacts
+		</h2>
+		<ul class="contacts__list list-reset">
+			<li class="contacts__item">
+				<a href="https://github.com/iamigrek" class="contacts__link">
+					<svg class="contacts__link-icon" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M20 0C16.0444 0 12.1776 1.17298 8.8886 3.37061C5.59962 5.56824 3.03617 8.69181 1.52242 12.3463C0.00866568 16.0009 -0.387401 20.0222 0.384303 23.9018C1.15601 27.7814 3.06082 31.3451 5.85787 34.1421C8.65492 36.9392 12.2186 38.844 16.0982 39.6157C19.9778 40.3874 23.9992 39.9913 27.6537 38.4776C31.3082 36.9638 34.4318 34.4004 36.6294 31.1114C38.827 27.8224 40 23.9556 40 20C40 14.6957 37.8929 9.60859 34.1421 5.85786C30.3914 2.10714 25.3043 0 20 0V0ZM32.48 17.49C32.28 21.71 29.53 24.9 23.75 25.39C24.2433 25.7454 24.6437 26.2146 24.917 26.7578C25.1903 27.3009 25.3285 27.902 25.32 28.51C25.32 29.28 25.46 31.19 25.57 32.75C22.394 33.9026 18.9387 34.0424 15.68 33.15C15.68 31.63 15.73 29.71 15.73 29.48C15.73 29.48 11.91 30.57 10.28 27.89C9.90575 26.8271 9.28556 25.8677 8.47001 25.09C8.42001 25.09 7.59001 24.64 7.47001 24.23C7.46992 24.1785 7.48639 24.1283 7.51701 24.0869C7.54762 24.0455 7.59074 24.015 7.64001 24C7.73001 24 9.11001 23.42 10.64 25.32C11.1 25.96 12.15 28.4 15.81 26.89C15.8647 26.5202 16.0356 26.1775 16.2981 25.9114C16.5606 25.6453 16.901 25.4697 17.27 25.41C11.81 24.77 8.43001 22.17 7.58001 17.41C7.06001 14.09 9.00001 12.53 10.4 11.25C10.0907 10.4601 9.94615 9.61525 9.97539 8.76743C10.0046 7.9196 10.207 7.08672 10.57 6.32C11.75 6.09 13.9 6.91 15.79 8.24C18.679 7.41573 21.741 7.41573 24.63 8.24C25.48 7.55 28.52 5.95 29.82 6.32C30.0018 7.95997 30.062 9.61115 30 11.26C30.8456 12.0526 31.5061 13.0217 31.9348 14.0984C32.3634 15.1752 32.5496 16.3332 32.48 17.49V17.49Z" />
+					</svg>
+					<div class="contacts__help">
+						My GitHub
+					</div>
+				</a>
+			</li>
+			<li class="contacts__item">
+				<a href="https://t.me/iamigrek" class="contacts__link">
+					<svg class="contacts__link-icon" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M20 0C16.0444 0 12.1776 1.17298 8.8886 3.37061C5.59962 5.56824 3.03617 8.69181 1.52242 12.3463C0.00866568 16.0009 -0.387401 20.0222 0.384303 23.9018C1.15601 27.7814 3.06082 31.3451 5.85787 34.1421C8.65492 36.9392 12.2186 38.844 16.0982 39.6157C19.9778 40.3874 23.9992 39.9913 27.6537 38.4776C31.3082 36.9638 34.4318 34.4004 36.6294 31.1114C38.827 27.8224 40 23.9556 40 20C40 14.6957 37.8929 9.60859 34.1421 5.85786C30.3914 2.10714 25.3043 0 20 0V0ZM26 32.14C25.9859 32.2149 25.9526 32.2849 25.9033 32.343C25.854 32.4012 25.7905 32.4456 25.7189 32.4718C25.6473 32.498 25.5702 32.5052 25.495 32.4926C25.4198 32.48 25.3492 32.4481 25.29 32.4L18 26.51C17.9191 26.4369 17.814 26.3965 17.705 26.3965C17.596 26.3965 17.4909 26.4369 17.41 26.51L16.05 27.83C15.9831 27.8903 15.8996 27.9292 15.8104 27.9416C15.7212 27.954 15.6303 27.9393 15.5495 27.8994C15.4687 27.8596 15.4017 27.7964 15.3572 27.718C15.3128 27.6397 15.2928 27.5498 15.3 27.46L15.71 23.65C15.7213 23.5457 15.7713 23.4493 15.85 23.38L23.7 16C23.7722 15.9229 23.8151 15.8229 23.821 15.7174C23.8269 15.6119 23.7955 15.5078 23.7323 15.4231C23.6691 15.3385 23.5781 15.2787 23.4753 15.2544C23.3725 15.2301 23.2644 15.2427 23.17 15.29L12 21.9C11.9403 21.9271 11.8755 21.9411 11.81 21.9411C11.7445 21.9411 11.6797 21.9271 11.62 21.9L6.34001 20.05C6.25743 20.0178 6.18649 19.9615 6.13647 19.8883C6.08646 19.8152 6.0597 19.7286 6.0597 19.64C6.0597 19.5514 6.08646 19.4648 6.13647 19.3917C6.18649 19.3185 6.25743 19.2622 6.34001 19.23L29.5 9.58C29.5739 9.54713 29.6553 9.53525 29.7355 9.54565C29.8157 9.55605 29.8914 9.58834 29.9545 9.63896C30.0175 9.68958 30.0653 9.75659 30.0928 9.83263C30.1202 9.90867 30.1262 9.9908 30.11 10.07L26 32.14Z" />
+					</svg>
+					<div class="contacts__help">
+						My Telegram
+					</div>
+				</a>
+			</li>
+			<li class="contacts__item">
+				<a href="mailto:igrek.dev@gmail.com" class="contacts__link">
+					<svg class="contacts__link-icon" xmlns="http://www.w3.org/2000/svg">
+						<path d="M20 18.9401L28.83 12.8401H11.17L20 18.9401Z" fill="white" />
+						<path
+							d="M20 0C16.0444 0 12.1776 1.17298 8.8886 3.37061C5.59962 5.56824 3.03617 8.69181 1.52242 12.3463C0.00866568 16.0009 -0.387401 20.0222 0.384303 23.9018C1.15601 27.7814 3.06082 31.3451 5.85787 34.1421C8.65492 36.9392 12.2186 38.844 16.0982 39.6157C19.9778 40.3874 23.9992 39.9913 27.6537 38.4776C31.3082 36.9638 34.4318 34.4004 36.6294 31.1114C38.827 27.8224 40 23.9556 40 20C40 14.6957 37.8929 9.60859 34.1421 5.85786C30.3914 2.10714 25.3043 0 20 0V0ZM32.5 28C32.5 28.2307 32.4083 28.452 32.2452 28.6152C32.082 28.7783 31.8607 28.87 31.63 28.87H8.37001C8.13927 28.87 7.91798 28.7783 7.75483 28.6152C7.59167 28.452 7.50001 28.2307 7.50001 28V12C7.50261 11.7701 7.5951 11.5503 7.7577 11.3877C7.9203 11.2251 8.14008 11.1326 8.37001 11.13H31.63C31.8191 11.1308 32.003 11.1925 32.1543 11.306C32.3056 11.4195 32.4163 11.5787 32.47 11.76C32.4796 11.8397 32.4796 11.9203 32.47 12L32.5 28Z" />
+					</svg>
+					<div class="contacts__help">
+						My Email
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<h3 class="contacts__title title title--bg">
+		Contacts
+	</h3>
+</section>
+			<!-- FOOTER -->
+<footer class="footer">
+	<div class="footer__container container">
+		<p class="footer__text text">
+			creater by <span class="footer__text--light">igrek</span>
+		</p>
+	</div>
+</footer>
+		</div>
+	</div>
+
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
