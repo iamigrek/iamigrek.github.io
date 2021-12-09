@@ -367,6 +367,12 @@
   width: max-content;
   z-index: 100;
 }
+@media (min-width: 1025px) {
+  .project {
+    max-width: 600px;
+    min-width: 200px;
+  }
+}
 @media (max-width: 1024px) {
   .project {
     position: static;
