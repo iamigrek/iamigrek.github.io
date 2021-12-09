@@ -56,7 +56,7 @@ function selectlanguage() {
     //RU
     ru: {
       hero: {
-        title: 'Junior Frontend Developer',
+        title: 'Frontend Developer',
         name: 'Игорь Деревянко',
         btn: 'Начать',
       },
@@ -116,7 +116,7 @@ function selectlanguage() {
     //EN
     en: {
       hero: {
-        title: 'Junior Frontend Developer',
+        title: 'Frontend Developer',
         name: 'Ihor Derevianko',
         btn: 'Get start',
       },
@@ -176,7 +176,7 @@ function selectlanguage() {
     //UK
     uk: {
       hero: {
-        title: 'Junior Frontend Developer',
+        title: 'Frontend Developer',
         name: "Ігор Дерев'янко",
         btn: 'Почати',
       },
@@ -235,8 +235,6 @@ function selectlanguage() {
     },
   };
 
-  console.log(Object.keys(langData));
-
   //Начальный язык в зависимости от языка браузера
   let lang;
 
@@ -260,7 +258,6 @@ function selectlanguage() {
       )
     ) {
       lang = 'en';
-      console.log;
       changeLang(lang);
     } else {
       //в случае отсутствия выбраного языка применяеться язык браузера
