@@ -56,7 +56,7 @@ function selectlanguage() {
     //RU
     ru: {
       hero: {
-        title: 'Веб-разработчик',
+        title: 'Junior Frontend Developer',
         name: 'Игорь Деревянко',
         btn: 'Начать',
       },
@@ -116,7 +116,7 @@ function selectlanguage() {
     //EN
     en: {
       hero: {
-        title: 'Web Developer',
+        title: 'Junior Frontend Developer',
         name: 'Ihor Derevianko',
         btn: 'Get start',
       },
@@ -134,7 +134,7 @@ function selectlanguage() {
           {
             projectName: 'Tic Tac Toe',
             projectDesc:
-              "The good old, well-known game, tic-tac-toe. <br> Has a small functionality, namely, changing the player's name, choosing or crosses, clearing the playing field and displaying the winner or a draw.",
+              "Good old, well-known game, tic-tac-toe. It has a small functionality, namely, changing the player's name, choosing zeroes or crosses, clearing the playing field and displaying a winner or a draw.",
             projectSite: 'https://iamigrek.github.io/game-tic-tac-toe/',
             projectCode: 'https://github.com/iamigrek/game-tic-tac-toe',
           },
@@ -176,7 +176,7 @@ function selectlanguage() {
     //UK
     uk: {
       hero: {
-        title: 'Веб-розробник',
+        title: 'Junior Frontend Developer',
         name: "Ігор Дерев'янко",
         btn: 'Почати',
       },
@@ -313,12 +313,10 @@ function selectlanguage() {
     document.querySelector('.projects__bit-title').textContent =
       langData[lang].projects.title;
     document.querySelectorAll('.project__title').forEach((item, index) => {
-      item.textContent =
-        langData[lang].projects.projectsList[index].projectName;
+      item.innerHTML = langData[lang].projects.projectsList[index].projectName;
     });
     document.querySelectorAll('.project__desc').forEach((item, index) => {
-      item.textContent =
-        langData[lang].projects.projectsList[index].projectDesc;
+      item.innerHTML = langData[lang].projects.projectsList[index].projectDesc;
     });
     document.querySelectorAll('.project__btn-site').forEach((item, index) => {
       item.href = langData[lang].projects.projectsList[index].projectSite;
@@ -431,22 +429,6 @@ function navigation() {
   });
 }
 
-const project = document.querySelectorAll('.project');
-let projectActive;
-
-project.forEach(item => {
-  item.addEventListener('click', () => {
-    project.forEach(el => el.classList.remove('project--active'));
-    if (item == projectActive) {
-      item.classList.remove('project--active');
-      projectActive = '';
-    } else {
-      item.classList.add('project--active');
-      projectActive = item;
-    }
-  });
-});
-
 const projectsItem = document.querySelectorAll('.projects__item');
 
 projectsItem.forEach(item => {
@@ -455,10 +437,20 @@ projectsItem.forEach(item => {
       .querySelectorAll('.project')
       .forEach(el => el.classList.remove('project--visible'));
     item.querySelector('.project').classList.add('project--visible');
+
+    document.querySelectorAll('.projects__link').forEach(el => {
+      el.classList.add('projects__link--hidden');
+    });
+    item
+      .querySelector('.projects__link')
+      .classList.remove('projects__link--hidden');
   });
-  item.addEventListener('mouseout', () =>
-    item.querySelector('.project').classList.remove('project--visible')
-  );
+  item.addEventListener('mouseout', () => {
+    item.querySelector('.project').classList.remove('project--visible');
+    document.querySelectorAll('.projects__link').forEach(el => {
+      el.classList.remove('projects__link--hidden');
+    });
+  });
 });
 
 function heroParticles() {

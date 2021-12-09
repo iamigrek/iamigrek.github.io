@@ -269,7 +269,7 @@
   top: 25%;
 }
 .projects__item--active:nth-child(2) .project {
-  left: -120px;
+  left: -104px;
 }
 .projects__item--active:nth-child(2) .project::after {
   left: 23%;
@@ -289,7 +289,7 @@
   top: 25%;
 }
 .projects__item--active:nth-child(4) .project {
-  right: -120px;
+  right: -117px;
 }
 .projects__item--active:nth-child(4) .project::after {
   left: 77%;
@@ -309,11 +309,18 @@
   display: block;
   width: 40px;
   height: 40px;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1, 1);
+  opacity: 1;
 }
 @media (max-width: 768px) {
   .projects__link {
     display: none;
   }
+}
+.projects__link--hidden {
+  transform: scale(0, 0);
+  opacity: 0;
 }
 .projects__link:hover::after {
   filter: blur(5px);
