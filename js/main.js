@@ -68,6 +68,7 @@ function selectlanguage() {
       },
       projects: {
         title: 'Работы',
+        more: 'Больше',
         btnSite: 'Сайт',
         btnCode: 'Код',
         projectsList: [
@@ -128,6 +129,7 @@ function selectlanguage() {
       },
       projects: {
         title: 'Projects',
+        more: 'More',
         btnSite: 'visit site',
         btnCode: 'view code',
         projectsList: [
@@ -188,6 +190,7 @@ function selectlanguage() {
       },
       projects: {
         title: 'Роботи',
+        more: 'Більше',
         btnSite: 'Сайт',
         btnCode: 'Код',
         projectsList: [
@@ -307,6 +310,8 @@ function selectlanguage() {
     //PROJECTS
     document.querySelector('.projects__title').textContent =
       langData[lang].projects.title;
+    document.querySelector('.projects__more-btn').textContent =
+      langData[lang].projects.more;
     document.querySelector('.projects__bit-title').textContent =
       langData[lang].projects.title;
     document.querySelectorAll('.project__title').forEach((item, index) => {
