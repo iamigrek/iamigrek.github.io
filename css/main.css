@@ -199,11 +199,67 @@
   top: 100px;
   padding: 50px 15px;
 }
+@media (min-width: 1025px) {
+  .projects__container {
+    flex-direction: column;
+  }
+}
 @media (max-width: 1024px) {
   .projects__container {
     max-height: 100%;
     flex-direction: column;
     top: 0;
+  }
+}
+.projects__container--more {
+  max-height: 100%;
+  flex-direction: column;
+  top: 0;
+}
+.projects__container--more .projects__more-btn {
+  display: none;
+}
+.projects__container--more .projects__list {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  height: auto;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+.projects__container--more .projects__list::-webkit-scrollbar {
+  width: 0;
+}
+.projects__container--more .projects__item {
+  position: static;
+  transform: translate(0, 0);
+  margin-bottom: 10px;
+}
+.projects__container--more .projects__item:nth-child(3) {
+  transform: translate(0, 0);
+}
+.projects__container--more .projects__link {
+  display: none;
+}
+.projects__container--more .project {
+  position: static;
+  max-height: 40px;
+  opacity: 1;
+  transform: scale(1, 1);
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+}
+.projects__container--more .project--active {
+  max-height: 1000px;
+}
+.projects__container--more .project::after {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .projects__more-btn {
+    display: none;
   }
 }
 .projects__list {

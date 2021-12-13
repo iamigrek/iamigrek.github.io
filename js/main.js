@@ -63,7 +63,7 @@ function selectlanguage() {
       header: ['Главная', 'Обо мне', 'Работы', 'Контакты'],
       about: {
         title: 'Обо мне',
-        text: 'Привет, меня зовут Игорь, я веб-разработчик. <br> Почти все свободное время посвящаю написанию кода или же его изучению. <br> Учусь самостоятельно, но также нахожусь на 3 курсе в Национальном Авиационном Университете на специальности Кибербезопасность.',
+        text: 'Привет, меня зовут Игорь, я Fontend Developer. <br> Почти все свободное время посвящаю написанию кода или же его изучению. <br> Учусь самостоятельно, но также нахожусь на 3 курсе в Национальном Авиационном Университете на специальности Кибербезопасность.',
         btn: 'Cкачать резюме',
       },
       projects: {
@@ -123,7 +123,7 @@ function selectlanguage() {
       header: ['Home', 'About', 'Projects', 'Contacts'],
       about: {
         title: 'About',
-        text: 'Hi, my name is Igor, I am a web developer.<br> I devote almost all my free time to writing code or studying it.<br> I am studying on my own, but I am also in the 3rd year at the National Aviation University with a Cybersecurity major.',
+        text: 'Hi, my name is Igor, I am a Fontend Developer.<br> I devote almost all my free time to writing code or studying it.<br> I am studying on my own, but I am also in the 3rd year at the National Aviation University with a Cybersecurity major.',
         btn: 'Download cv',
       },
       projects: {
@@ -183,7 +183,7 @@ function selectlanguage() {
       header: ['Головна', 'Про мене', 'Роботи', 'Контакти'],
       about: {
         title: 'Про мене',
-        text: 'Привіт мене звати Ігор, я веб-розробник. <br> Майже весь вільний час присвячую написанню коду або його вивченню. <br> Вчуся самостійно, але також перебуваю на 3 курсі в Національному Авіаційному Університеті на спеціальності Кібербезпека.',
+        text: 'Привіт мене звати Ігор, я Fontend Developer. <br> Майже весь вільний час присвячую написанню коду або його вивченню. <br> Вчуся самостійно, але також перебуваю на 3 курсі в Національному Авіаційному Університеті на спеціальності Кібербезпека.',
         btn: 'Завантажити резюме',
       },
       projects: {
@@ -354,6 +354,12 @@ function letterHover() {
     }, 500);
   });
 }
+
+document.querySelector('.projects__more-btn').addEventListener('click', () => {
+  document
+    .querySelector('.projects__container')
+    .classList.add('projects__container--more');
+});
 
 function navigation() {
   const header = document.querySelector('.header');
